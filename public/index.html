@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tip Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="card">
+      <h1>Tip Calculator</h1>
+      <p class="subtitle">CI/CD practice app #2</p>
+
+      <label for="bill">Bill amount</label>
+      <input id="bill" type="number" min="0" placeholder="e.g. 1000" />
+
+      <label for="tip-percent">Tip (%)</label>
+      <input id="tip-percent" type="number" min="0" value="10" />
+
+      <label for="people">Number of people</label>
+      <input id="people" type="number" min="1" value="1" />
+
+      <button id="calc-btn">Calculate</button>
+      <p id="message" class="message"></p>
+
+      <div class="results">
+        <div class="row"><span>Tip</span><strong id="tip-amount">0.00</strong></div>
+        <div class="row"><span>Total</span><strong id="total-amount">0.00</strong></div>
+        <div class="row"><span>Per person</span><strong id="per-person">0.00</strong></div>
+      </div>
+    </main>
+
+    <script type="module" src="script.js"></script>
+  </body>
+</html>

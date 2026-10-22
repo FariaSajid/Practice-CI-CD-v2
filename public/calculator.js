@@ -5,7 +5,7 @@ export function calculateTip(bill, percent) {
 }
 
 export function calculateTotal(bill, percent) {
-  return bill - calculateTip(bill, percent);
+  return bill + calculateTip(bill, percent);
 }
 
 export function splitBill(total, people) {

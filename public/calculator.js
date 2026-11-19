@@ -4,9 +4,9 @@ export function calculateTip(bill, percent) {
   return (bill * percent) / 100;
 }
 
-// export function calculateTotal(bill, percent) {
-//   return bill + calculateTip(bill, percent);
-// }
+export function calculateTotal(bill, percent) {
+  return bill + calculateTip(bill, percent);
+}
 
 export function splitBill(total, people) {
   if (people < 1) {
